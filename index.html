@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .theVideo {
+                width: 300px;
+            }
+            @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .theVideo {
+                        display: none;
+                    }
+}
+        </style>
+    </head>
+    <body>
+        <p>Hello world</p>
+        <video 
+        autoplay 
+        muted
+        playsinlineloop
+        class="theVideo">
+            <source src="video.mov" type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+    </body>
+</html>
