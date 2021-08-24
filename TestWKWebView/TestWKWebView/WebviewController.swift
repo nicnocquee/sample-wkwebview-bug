@@ -15,7 +15,5 @@ class WebviewController: UIViewController {
     super.viewDidLoad()
     webview.load(URLRequest(url: URL(string: "http://10.203.1.61:5000")!))
   }
-  
-  
 }
 
